@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Arial', sans-serif;
+    color: rgb(196, 192, 192);
+    height: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .nav-links li a {
+    color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+   
+  
+  
+  .nav-links li a:hover {
+    color: #33e0ff;
+  }
+  
+  .search {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    background:url(https://th.bing.com/th/id/OIP.w_xCZ2P4qrCd_M7w_mjLZwHaEK?rs=1&pid=ImgDetMain) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  
+  .hero-content span {
+    color: #33b1ff;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .cta-button {
+    background-color: #33cfff;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+  }
+  
+  .arrow {
+    background: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+  }
